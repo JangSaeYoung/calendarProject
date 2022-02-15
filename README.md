@@ -1,8 +1,8 @@
 ## ⚙️ 설치
-npm creat reat-app clandar 
-npm install recoil
-npm add styled-components
-npm install react-day-picker
+npm creat reat-app clandar </br>
+npm install recoil </br>
+npm add styled-components </br>
+npm install react-day-picker </br>
 
 ## 🗂 파일구조
 • 🗓 Calendar Components
