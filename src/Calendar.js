@@ -1,5 +1,7 @@
 import React from 'react';
+import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
+// import styled from 'styled-components';
 import './Calendar.css';
 
 
@@ -8,8 +10,9 @@ import './Calendar.css';
 
 const Calendar = () => {
     return(
-       <div>화면확인</div>
+        <DayPicker />
 )
 };
 
 export default Calendar;
+

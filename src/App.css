@@ -1,0 +1,38 @@
+
+.DayPicker-Body{
+    width: 971px;
+    height: 664px;
+}
+
+.DayPicker-Month{
+    width: 971px;
+}
+
+.DayPicker-wrapper{
+    width: 971px;
+    margin: 157px 68px 156px 97px;
+}
+.DayPicker-Caption{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.DayPicker-Body{
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+}
+
+.DayPicker-Week{
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px; 
+}
+
+.DayPicker-Day{
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px; 
+    text-align: initial;
+    vertical-align:baseline;
+}
