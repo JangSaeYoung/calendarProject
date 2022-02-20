@@ -1,24 +1,45 @@
+.calendar-container{
+    /* margin: 157px 68px 156px 97px; */
+}
+
 
 .DayPicker-Body{
-    width: 971px;
-    height: 664px;
+    
+    width: 971.97px;
+    height: 603.47px;
 
 }
 
+.DayPicker-Months{
+    margin: 157px 68px 56px 97px;
+}
+
+
 .DayPicker-Month{
-    width: 971px;
+    width: 971.97px;
+    height: 603.47px;
 }
 
 .DayPicker-wrapper{
     width: 971px;
-    margin: 157px 68px 156px 97px;
+    padding: 0px;
+
 }
 
-.DayPicker-Caption{
-    font-size: 30px;
-    font-weight: bold;
-}
 
+.DayPicker-Caption {
+    display: table-caption;
+    margin-bottom: 10px;
+    text-align: left;
+    
+   
+}
+.DayPicker-Caption div{
+width: 235px;
+height: 39px;
+font-size: 30px;
+font-weight: bold;
+}
 .DayPicker-Body{
     border-style: solid;
     border-color: lightgrey;
@@ -31,10 +52,15 @@
     border-width: 1px; 
 }
 
+.DayPicker-Weekday{
+    text-align: inherit;
+    color: black;
+}
 .DayPicker-Day{
     border-style: solid;
     border-color: lightgrey;
     border-width: 1px; 
     text-align: initial;
     vertical-align:baseline;
+
 }

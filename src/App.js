@@ -7,9 +7,7 @@ function App() {
   return (
   <Container>
     <Sidebar>사이드바 자리</Sidebar>
-    <CalContainer>
       <Calendar />
-    </CalContainer>
   </Container>
   );
 }
@@ -22,11 +20,7 @@ display: flex;
 `;
 
 const Sidebar = styled.div`
-width: 377px;
-height: 977px;
+width: 23.5625rem;
+height: 61.0625rem;
 background-color: #E2E2E2;
 `;
-
-const CalContainer= styled.div`
-// padding: 157px 82px;
-`
