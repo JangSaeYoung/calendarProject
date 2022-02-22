@@ -1,18 +1,38 @@
 import React from 'react';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import './Calendar.css';
-
 
 //calendar 레이아웃 컴포넌트
 // Daypicker를 import
 
+    // 요일 바꾸기 => 이렇게 바꾸면 요일 따라 날짜 이동을 안함. 요일만 바뀜.
+    const WEEKDAYS_SHORT = ['S','M', 'T', 'W', 'T', 'F', 'S'];
+
+    // Change format Day with Leading zero
+    // const MyDate = new Date();
+
 const Calendar = () => {
+
     return(
-        <DayPicker />
+        <div class='Container'>
+            <CalendarBox>
+                <DayPicker 
+                    weekdaysShort={WEEKDAYS_SHORT}  
+                    showOutsideDays    // 이전/다음 날짜 보이기
+                    canChangeMonth={false}   // 버튼 제거
+                />
+            </CalendarBox>
+            <p>고양이</p>
+        </div>
 )
 };
 
+
 export default Calendar;
+
+const CalendarBox = styled.div`
+    background-color: white;
+`
 
