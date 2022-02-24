@@ -24,7 +24,6 @@ const Calendar = () => {
                     canChangeMonth={false}   // 버튼 제거
                 />
             </CalendarBox>
-            <p>고양이</p>
         </div>
 )
 };
