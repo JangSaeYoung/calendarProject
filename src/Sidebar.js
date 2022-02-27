@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useState } from "react";
+
 import DayPicker from 'react-day-picker';
+// import { DateUtils } from 'react-day-picker';
+// import DayPickerInput from 'react-day-picker/DayPickerInput';   //선택한 날짜 표시 가져오기 
+// import dateFnsFormat from 'date-fns/format';
+// import dateFnsParse from 'date-fns/parse';
 import Button from './Button';
 import {FaArrowLeft} from 'react-icons/fa';
 import 'react-day-picker/lib/style.css';
+import './Sidebar.css';
 import styled from 'styled-components';
 import './Calendar.css';
 
+
+
+
+    
 
 const Sidebar = () => {
 
     return(
         <SidebarContainer>
-           <SidebarToday>사이드바 오늘 날짜</SidebarToday>       {/* 데이피커에서 가져오기 */}
+           <SidebarToday>    {/* 데이피커에서 가져오기 */}
+            </SidebarToday>   
             <RegisterBox>
                 <Styledinput type='text' placeholder='TODO'></Styledinput>
                 <Styledinput type='text' placeholder='Description'></Styledinput>
@@ -52,6 +63,12 @@ justify-content: center;
 left:15px;
 `;
 
+const TodayText = styled.div`
+text-align: center;
+color: darkgreay;
+font-size: 20px;
+width: 150p;
+`
 
 
 const SidebarToday = styled.div`
@@ -60,8 +77,13 @@ position: absolute;
   height: 54px;
   top:26px;
   buttom:897px;
-  left: 33px;
+  left: 33px; 
   margin-bottom:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
 `
 
 const RegisterBox = styled.div`
@@ -109,12 +131,10 @@ const ButtonBox = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-
 `
 
 
 const ResgitsterInput = styled.div`
-
 position: absolute;
 display: flex;
 flex-direction: column;
@@ -133,6 +153,6 @@ const TodoText = styled.div`
 width : 315.89px;
  height: 36.05px;
  text-align: center;
-
+color: darkgreay;
+font-size: 20px;
 `
-
